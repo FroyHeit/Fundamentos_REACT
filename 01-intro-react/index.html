@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--viewport es para que la pagina se adapte a cualquier pantalla, como celulares, tablets, etc-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--React-->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!--Babel-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React APP</title>
+</head>
+
+<body>
+
+    <!--Contenedor donde se renderizara la app-->
+    <div id="root"></div>
+
+    <!--Script-->
+    <script type="text/babel">
+        const divroot = document.querySelector("#root");
+        const nombre = "Goku";
+        //creamos la etiqueta h1
+        const h1tag = <h1>Hola Mundo React, soy {nombre}</h1>;
+        //renderizamos la etiqueta h1 en el divroot
+        ReactDOM.render(h1tag, divroot);
+
+
+
+    </script>
+</body>
+
+</html>
